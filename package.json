@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "enzyme": "^2.8.2",
+    "flow": "^0.2.3",
     "flow-bin": "^0.48.0",
     "husky": "^0.13.4",
     "lint-staged": "^3.6.1",
