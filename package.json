@@ -11,11 +11,14 @@
     "styled-components": "^2.0.1"
   },
   "devDependencies": {
+    "enzyme": "^2.8.2",
     "flow-bin": "^0.48.0",
     "husky": "^0.13.4",
     "lint-staged": "^3.6.1",
     "prettier": "^1.4.4",
-    "react-scripts": "1.0.7"
+    "react-addons-test-utils": "^15.6.0",
+    "react-scripts": "1.0.7",
+    "react-test-renderer": "^15.6.1"
   },
   "scripts": {
     "start": "react-scripts start",
