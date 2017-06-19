@@ -2,13 +2,9 @@
 
 An open-source developer site using React.
 
-[(Link to older version)](https://dentemple-31337.firebaseapp.com/)
-
 [Find me on Twitter!](https://twitter.com/dentemple)
 
 [Find me on LinkedIn!](https://www.linkedin.com/in/dentemple/)
-
-## Technology
 
 ## Try It Out
 
@@ -29,6 +25,14 @@ An open-source developer site using React.
   * `yarn coverage` for a coverage report
 
 ## Images
+
+Photography for this project has been provided by [Unsplash](https://unsplash.com/) under a [Creative Commons License](https://creativecommons.org/publicdomain/zero/1.0/).
+
+Hero image: [Elena Prokofyeva](https://unsplash.com/@leni_eleni)
+
+## Older Version
+
+[Link](https://dentemple-31337.firebaseapp.com/)
 
 ## License
 

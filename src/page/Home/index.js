@@ -23,7 +23,9 @@ class Home extends Component {
       <Wrapper>
         <Hero />
         <AppIntro>
-          ✨ Currently rebuilding ✨
+          <span role="img" aria-label="sparkles emoji">✨</span>
+          Currently rebuilding
+          <span role="img" aria-label="sparkles emoji">✨</span>
         </AppIntro>
       </Wrapper>
     )
