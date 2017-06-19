@@ -2,3 +2,25 @@ body {
   margin: 0;
   padding: 0;
 }
+
+hr {
+  padding: 0;
+  margin: 0 auto;
+  border: none;
+  border-top: medium double #ffffff;
+  color: #ffffff;
+  text-align: center;
+  width: 35%;
+}
+
+hr:after {
+  content: "§";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
