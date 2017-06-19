@@ -24,11 +24,18 @@ class Home extends Component {
           'Static Pages',
           'Full Service Websites',
           'Native Web Apps',
+          'UX Design',
           'SEO Consulting',
-          'API Integrations'
+          'API Integration'
         ],
-        employerSkills: [],
-        summary: `Den Temple is a Javascript Developer with over three years in the industry. He specializes in Front End Design for web and mobile applications, and has additional expertise as a business analyst and full stack programmer.`
+        employerSkills: [
+          'React',
+          'JavaScript ES6',
+          'Agile/Scrum',
+          'Continuous Integration',
+          'API/Microservices'
+        ],
+        summary: `Den Temple is a Javascript Developer with over three years in the industry. He specializes in Front End Design for web and mobile applications, and has additional expertise with full stack development and business analytics.`
       }
     }
   }
