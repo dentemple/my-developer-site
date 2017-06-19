@@ -1,5 +1,3 @@
-// @flow
-
 import React from 'react'
 import Container from './Container'
 import GithubRibbon from './GithubRibbon'
@@ -7,7 +5,7 @@ import TextWrapper from './TextWrapper'
 import MyName from './MyName'
 import MyTagline from './MyTagline'
 
-const Hero = () =>
+const Hero = ({ isAvailable }) =>
   <Container>
     <GithubRibbon />
     <TextWrapper>

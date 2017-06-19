@@ -1,6 +1,6 @@
 # Developer Site for Den Temple [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
-An open-source developer site using React.
+An open-source website using Create React App on Netlify.
 
 [Find me on Twitter!](https://twitter.com/dentemple)
 
@@ -21,7 +21,7 @@ An open-source developer site using React.
   * `yarn start`
   * Navigate to the development environment here: [http://localhost:3000/](http://localhost:3000/)
 * Test Suite
-  * `yarn test`
+  * `yarn test` for the test suite
   * `yarn coverage` for a coverage report
 
 ## Images

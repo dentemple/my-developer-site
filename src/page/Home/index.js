@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import Hero from '../../component/Hero'
+import AboutMe from '../../component/AboutMe'
 
 const Wrapper = styled.div`
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
 `
 
@@ -15,16 +16,31 @@ class Home extends Component {
   constructor(props: any, children: any) {
     super()
     this.state = {
-      isAvailable: true
+      isAvailable: true,
+      profile: {
+        location: 'Scranton, PA',
+        year: '2017',
+        clientSkills: [
+          'Static Pages',
+          'Full Service Websites',
+          'Native Web Apps',
+          'SEO Consulting',
+          'API Integrations'
+        ],
+        employerSkills: [],
+        summary: `Den Temple is a Javascript Developer with over three years in the industry. He specializes in Front End Design for web and mobile applications, and has additional expertise as a business analyst and full stack programmer.`
+      }
     }
   }
   render() {
     return (
       <Wrapper>
-        <Hero />
+        <Hero isAvailable={this.state.isAvailable} />
+        <AboutMe profile={this.state.profile} />
         <AppIntro>
           <span role="img" aria-label="sparkles emoji">✨</span>
-          Currently rebuilding
+          &nbsp;&nbsp;Currently rebuilding this website. Please come back
+          soon!&nbsp;&nbsp;
           <span role="img" aria-label="sparkles emoji">✨</span>
         </AppIntro>
       </Wrapper>
