@@ -1,36 +1,26 @@
 import React from 'react'
 import styled from 'styled-components'
+import ProfileTag from './ProfileTag'
+import ProfileSummary from './ProfileSummary'
+import ProfileSkills from './ProfileSkills'
 
 const Wrapper = styled.div`
-  padding: 25px;
-  flex-basis: 70%;
-  font-size: 0.9em;
   color: #474747;
-  margin: 0px auto;
   text-align: left;
-`
-
-const SubHeading = styled.h3`
-  font-family: "Exo", sans-serif;
-  font-size: 1em;
-  color: #474747;
-  margin: 0;
-`
-
-const NBSpace = () => <span>&nbsp;</span>
-
-const SummaryWrapper = styled.p`
-  font-family: "Open Sans", sans-serif;
+  font-size: 0.9em;
+  margin: 0px;
+  margin-left: 20px;
 `
 
 const Profile = ({ profile }) =>
   <Wrapper>
-    <SubHeading>
-      {profile.location}<NBSpace /> • <NBSpace />Freelancer since {profile.year}
-    </SubHeading>
-    <SummaryWrapper>{profile.summary}</SummaryWrapper>
-    <SubHeading>For Clients:</SubHeading>
-    <SubHeading>For Employers:</SubHeading>
+    <ProfileTag location={profile.location} year={profile.year} />
+    <ProfileSummary summary={profile.summary} />
+    <ProfileSkills text="For Potential Clients" skills={profile.clientSkills} />
+    <ProfileSkills
+      text="For Potential Employers"
+      skills={profile.employerSkills}
+    />
   </Wrapper>
 
 export default Profile

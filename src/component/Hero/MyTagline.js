@@ -10,16 +10,23 @@ import MediumIcon from '../MediumIcon'
 const Wrapper = styled.h2`
   font-size: 1.4em;
   padding: 0;
-  margin: 0;
+  margin: 0 5px;
 `
 
 const NBSpace = () => <span>&nbsp;</span>
-const Text = () => <span>Software<NBSpace />Developer</span>
-const Separator = () => <span><NBSpace />| </span>
+const Text = () =>
+  <span>
+    Software<NBSpace />Developer
+  </span>
+const Separator = () =>
+  <span>
+    <NBSpace />|{' '}
+  </span>
 
 const MyTagline = () =>
   <Wrapper>
-    <Text /><Separator />
+    <Text />
+    <Separator />
 
     <SocialMediaButton
       destination="Twitter"
@@ -38,7 +45,6 @@ const MyTagline = () =>
       link="https://medium.com/@dentemple">
       <MediumIcon />
     </SocialMediaButton>
-
   </Wrapper>
 
 export default MyTagline

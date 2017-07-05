@@ -9,9 +9,7 @@ const Wrapper = styled.button`
   outline: none;
 `
 
-const ExternalLink = styled.a`
-  color: white;
-`
+const ExternalLink = styled.a`color: white;`
 
 const SocialMediaButton = props =>
   <Wrapper>

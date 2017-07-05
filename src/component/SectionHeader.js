@@ -7,13 +7,23 @@ const Wrapper = styled.h2`
 `
 
 const NBSpace = () => <span>&nbsp;</span>
-const Lace = () => <span>{'{'}</span>
-const Race = () => <span>{'}'}</span>
+const Lace = () =>
+  <span>
+    {'{'}
+  </span>
+const Race = () =>
+  <span>
+    {'}'}
+  </span>
 
 const SectionHeader = ({ name }) => {
   return (
     <Wrapper>
-      <Lace /><NBSpace />{name}<NBSpace /><Race />
+      <Lace />
+      <NBSpace />
+      {name}
+      <NBSpace />
+      <Race />
     </Wrapper>
   )
 }

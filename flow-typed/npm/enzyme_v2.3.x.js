@@ -1,5 +1,5 @@
-// flow-typed signature: 10aa482c166ffe2ff0f62e3a367bc5cd
-// flow-typed version: 64d5f46151/enzyme_v2.3.x/flow_>=v0.28.x
+// flow-typed signature: e43ba086c11bd66affb2184fc86ee929
+// flow-typed version: e6adbe598a/enzyme_v2.3.x/flow_>=v0.28.x
 
 declare module 'enzyme' {
   declare type PredicateFunction<T: Wrapper> = (wrapper: T) => boolean;
@@ -25,7 +25,7 @@ declare module 'enzyme' {
     hasClass(className: string): boolean;
     is(selector: EnzymeSelector): boolean;
     isEmpty(): boolean;
-    not(selector: EnzymeSelector): boolean;
+    not(selector: EnzymeSelector): this;
     children(selector?: EnzymeSelector): this;
     childAt(index: number): this;
     parents(selector?: EnzymeSelector): this;
@@ -38,6 +38,7 @@ declare module 'enzyme' {
     get(index: number): React$Element<any>;
     getNode(): React$Element<any>;
     getNodes(): Array<React$Element<any>>;
+    getDOMNode(): HTMLElement | HTMLInputElement;
     at(index: number): this;
     first(): this;
     last(): this;

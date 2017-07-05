@@ -7,7 +7,9 @@
   "dependencies": {
     "react": "^15.6.0",
     "react-dom": "^15.6.0",
+    "react-flexbox-grid": "^1.1.3",
     "react-icons": "^2.2.5",
+    "react-router-dom": "^4.1.1",
     "styled-components": "^2.0.1"
   },
   "devDependencies": {
@@ -26,8 +28,8 @@
     "flow": "flow",
     "precommit": "lint-staged",
     "test": "react-scripts test --env=jsdom",
-    "update": "react-scripts test --env=jsdom -u",
-    "coverage": "react-scripts test --env=jsdom --coverage",
+    "test:update": "react-scripts test --env=jsdom -u",
+    "test:coverage": "react-scripts test --env=jsdom --coverage",
     "build": "react-scripts build"
   },
   "lint-staged": {
