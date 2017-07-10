@@ -22,7 +22,7 @@ An open-source website using Create React App on Netlify.
   * Navigate to the development environment here: [http://localhost:3000/](http://localhost:3000/)
 * Test Suite
   * `yarn test` for the test suite
-  * `yarn coverage` for a coverage report
+  * `yarn test:coverage` for a coverage report
 
 ## Images
 

@@ -4,6 +4,15 @@
   "email": "developer@dentemple.com",
   "version": "1.0.0",
   "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "flow": "flow",
+    "precommit": "lint-staged",
+    "test": "react-scripts test --env=jsdom",
+    "test:update": "react-scripts test --env=jsdom -u",
+    "test:coverage": "react-scripts test --env=jsdom --coverage",
+    "build": "react-scripts build"
+  },
   "dependencies": {
     "react": "^15.6.0",
     "react-dom": "^15.6.0",
@@ -22,15 +31,6 @@
     "react-addons-test-utils": "^15.6.0",
     "react-scripts": "1.0.7",
     "react-test-renderer": "^15.6.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "flow": "flow",
-    "precommit": "lint-staged",
-    "test": "react-scripts test --env=jsdom",
-    "test:update": "react-scripts test --env=jsdom -u",
-    "test:coverage": "react-scripts test --env=jsdom --coverage",
-    "build": "react-scripts build"
   },
   "lint-staged": {
     "src/**/*.js": [
