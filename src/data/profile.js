@@ -11,13 +11,7 @@ const PROFILE = {
     'Payment APIs',
     'Based in U.S.'
   ],
-  employerSkills: [
-    'React',
-    'Node.js',
-    'REST/GraphQL',
-    'Agile/Scrum',
-    'Git/Github'
-  ]
+  employerSkills: ['React', 'Node.js', 'REST API', 'Agile/Scrum', 'Git/Github']
 }
 
 export default PROFILE

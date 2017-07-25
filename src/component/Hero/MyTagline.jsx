@@ -2,10 +2,11 @@
 
 import React from 'react'
 import styled from 'styled-components'
+
 import SocialMediaButton from './SocialMediaButton'
-import TwitterIcon from '../TwitterIcon'
-import LinkedInIcon from '../LinkedInIcon'
-import MediumIcon from '../MediumIcon'
+import TwitterIcon from '../Icons/Twitter'
+import LinkedInIcon from '../Icons/LinkedIn'
+import MediumIcon from '../Icons/Medium'
 
 const Wrapper = styled.h2`
   font-size: 1.4em;
