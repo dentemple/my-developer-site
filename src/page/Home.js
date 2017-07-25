@@ -5,28 +5,30 @@ import styled from 'styled-components'
 
 import Hero from '../component/Hero'
 import AboutMe from '../component/AboutMe'
-import PROFILE from '../data/profile'
+import profile from '../data/profile'
+import type { Profile } from '../types'
 
-const Wrapper = styled.div`text-align: center;`
-const AppIntro = styled.p`font-size: large;`
+const StyledDiv = styled.div`text-align: center;`
+const StyledText = styled.p`font-size: large;`
+
+type State = {|
+  profile: Profile
+|}
 
 class Home extends Component {
-  state = {
-    profile: {
-      isAvailable: PROFILE.isAvailable,
-      location: PROFILE.location,
-      year: PROFILE.year,
-      clientSkills: PROFILE.clientSkills,
-      summary: PROFILE.summary,
-      employerSkills: PROFILE.employerSkills
-    }
+  state: State = {
+    profile: {}
+  }
+  componentDidMount() {
+    this.setState({ profile })
   }
   render() {
+    const { profile } = this.state
     return (
-      <Wrapper>
-        <Hero isAvailable={this.state.profile.isAvailable} />
-        <AboutMe profile={this.state.profile} />
-        <AppIntro>
+      <StyledDiv>
+        <Hero profile={profile} />
+        <AboutMe profile={profile} />
+        <StyledText>
           <span role="img" aria-label="sparkles emoji">
             ✨
           </span>
@@ -35,8 +37,8 @@ class Home extends Component {
           <span role="img" aria-label="sparkles emoji">
             ✨
           </span>
-        </AppIntro>
-      </Wrapper>
+        </StyledText>
+      </StyledDiv>
     )
   }
 }

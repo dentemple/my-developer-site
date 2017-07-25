@@ -5,5 +5,9 @@ import { shallow } from 'enzyme'
 import MyComponent from '../Section'
 
 it('renders without crashing', () => {
-  shallow(<MyComponent />)
+  shallow(
+    <MyComponent>
+      <div />
+    </MyComponent>
+  )
 })

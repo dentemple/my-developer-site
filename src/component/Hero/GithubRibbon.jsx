@@ -3,10 +3,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Image = styled.img`
-  position: absolute; 
-  top: 0; 
-  right: 0; 
+const StyledImage = styled.img`
+  position: absolute;
+  top: 0;
+  right: 0;
   border: 0;
 `
 
@@ -20,7 +20,7 @@ const GithubRibbon = () => {
     'https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png'
   return (
     <ImageLink href={githubLink}>
-      <Image
+      <StyledImage
         src={imageSrc}
         data-canonical-src={dataSrc}
         alt="Navigate to this project on Github"

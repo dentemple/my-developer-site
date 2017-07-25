@@ -8,7 +8,7 @@ import TwitterIcon from '../Icons/Twitter'
 import LinkedInIcon from '../Icons/LinkedIn'
 import MediumIcon from '../Icons/Medium'
 
-const Wrapper = styled.h2`
+const StyledHeading = styled.h2`
   font-size: 1.4em;
   padding: 0;
   margin: 0 5px;
@@ -25,7 +25,7 @@ const Separator = () =>
   </span>
 
 const MyTagline = () =>
-  <Wrapper>
+  <StyledHeading>
     <Text />
     <Separator />
 
@@ -46,6 +46,6 @@ const MyTagline = () =>
       link="https://medium.com/@dentemple">
       <MediumIcon />
     </SocialMediaButton>
-  </Wrapper>
+  </StyledHeading>
 
 export default MyTagline

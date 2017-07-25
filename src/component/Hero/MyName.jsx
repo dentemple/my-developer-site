@@ -3,7 +3,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Wrapper = styled.h1`
+const StyledHeading = styled.h1`
   font-size: 3em;
   padding: 0;
   margin: 30px auto;
@@ -15,8 +15,12 @@ const Lace = () => <span>{`{`}</span>
 const Race = () => <span>{`}`}</span>
 
 const MyName = () =>
-  <Wrapper>
-    <Lace /><NBSpace /><Text /><NBSpace /><Race />
-  </Wrapper>
+  <StyledHeading>
+    <Lace />
+    <NBSpace />
+    <Text />
+    <NBSpace />
+    <Race />
+  </StyledHeading>
 
 export default MyName

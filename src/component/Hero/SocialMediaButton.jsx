@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Wrapper = styled.button`
+const StyledButton = styled.button`
   background-color: Transparent;
   font-size: 1.2em;
   border: none;
@@ -9,15 +9,15 @@ const Wrapper = styled.button`
   outline: none;
 `
 
-const ExternalLink = styled.a`color: white;`
+const StyledLink = styled.a`color: white;`
 
 const SocialMediaButton = props =>
-  <Wrapper>
-    <ExternalLink
+  <StyledButton>
+    <StyledLink
       href={props.link}
       aria-label={`Navigate to ${props.destination} profile`}>
       {props.children}
-    </ExternalLink>
-  </Wrapper>
+    </StyledLink>
+  </StyledButton>
 
 export default SocialMediaButton

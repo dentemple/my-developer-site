@@ -1,21 +1,30 @@
+// @flow
+
 import React from 'react'
 import { Row } from 'react-flexbox-grid'
+
 import SubHeading from './SubHeading'
 import Skill from './Skill'
 
-const ProfileSkills = ({ text, skills }) =>
+const NotYetLoaded = () => <small>Loading Data</small>
+
+const ProfileSkills = ({
+  heading,
+  skills
+}: {
+  heading: string,
+  skills: Array<string>
+}) =>
   <div>
     <SubHeading>
-      {text}
+      {heading}
     </SubHeading>
     <Row>
-      {skills.map((skill, index) => {
-        return (
-          <Skill key={index}>
-            {skill}
-          </Skill>
-        )
-      })}
+      {skills
+        ? skills.map((skill, index) => {
+            return <Skill key={index} skill={skill} />
+          })
+        : <NotYetLoaded />}
     </Row>
   </div>
 

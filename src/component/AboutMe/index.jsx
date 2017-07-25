@@ -1,10 +1,14 @@
+// @flow
+
 import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
+import type { Profile } from '../../types'
+
 import Section from '../Section'
 import ResumeImage from './ResumeImage'
-import Profile from './Profile'
+import ShowProfile from './ShowProfile'
 
-const AboutMe = ({ profile }) =>
+const AboutMe = ({ profile }: { profile: Profile }) =>
   <Section>
     <Grid fluid>
       <Row>
@@ -12,7 +16,7 @@ const AboutMe = ({ profile }) =>
           <ResumeImage />
         </Col>
         <Col xs={12} sm={8}>
-          <Profile profile={profile} />
+          <ShowProfile profile={profile} />
         </Col>
       </Row>
     </Grid>

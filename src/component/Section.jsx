@@ -1,8 +1,11 @@
+// @flow
+
 import React from 'react'
 import styled from 'styled-components'
+import SectionHeading from './SectionHeading'
 
-const Wrapper = styled.section`
-  margin: 0px auto;
+const StyledSection = styled.section`
+  margin: 50px auto 50px;
   padding: 20px 10px;
   max-width: 1000px;
   line-height: 1.6; }
@@ -13,9 +16,10 @@ const Wrapper = styled.section`
   box-sizing: border-box;
 `
 
-const Section = ({ children }) =>
-  <Wrapper>
+const Section = ({ children }: { children: any }) =>
+  <StyledSection>
+    <SectionHeading heading="About Me" />
     {children}
-  </Wrapper>
+  </StyledSection>
 
 export default Section
