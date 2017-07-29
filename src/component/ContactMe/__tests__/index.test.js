@@ -1,0 +1,16 @@
+// @flow
+
+import React from 'react'
+import { shallow, render } from 'enzyme'
+import MyComponent from '../index'
+
+import PROFILE from '../../../data/profile'
+
+it('renders without crashing', () => {
+  shallow(<MyComponent email="test@test.com" />)
+})
+
+it('matches the snapshot', () => {
+  const component = render(<MyComponent email="test@test.com" />)
+  expect(component).toMatchSnapshot()
+})

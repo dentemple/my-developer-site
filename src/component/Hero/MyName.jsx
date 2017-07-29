@@ -7,6 +7,11 @@ const StyledHeading = styled.h1`
   font-size: 3em;
   padding: 0;
   margin: 30px auto;
+  transition: all 0.5s;
+
+  @media only screen and (max-width: 480px) {
+    font-size: 2em;
+  }
 `
 
 const Text = () => <span>Den Temple</span>

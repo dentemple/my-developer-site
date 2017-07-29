@@ -11,7 +11,7 @@ import ProfileSkills from './ProfileSkills'
 const StyledDiv = styled.div`
   color: #474747;
   text-align: left;
-  font-size: 0.9em;
+  font-size: 1em;
   margin: 0px;
   margin-left: 20px;
 `
@@ -20,14 +20,8 @@ const ShowProfile = ({ profile }: { profile: Profile }) =>
   <StyledDiv>
     <ProfileTag location={profile.location} year={profile.year} />
     <ProfileSummary summary={profile.summary} />
-    <ProfileSkills
-      heading="For Potential Clients"
-      skills={profile.clientSkills}
-    />
-    <ProfileSkills
-      heading="For Potential Employers"
-      skills={profile.employerSkills}
-    />
+    <ProfileSkills heading="For Clients" skills={profile.clientSkills} />
+    <ProfileSkills heading="For Employers" skills={profile.employerSkills} />
   </StyledDiv>
 
 export default ShowProfile

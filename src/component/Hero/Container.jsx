@@ -14,7 +14,9 @@ const Container = styled.header`
   height: 600px;
   background-size: cover;
   background-position: 50% 50%;
-  color: #ffffff;
+  font-family: "Exo", sans-serif;
+  font-weight: 300;
+  color: #fffff1;
   text-align: center;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.72), 0 0 15px rgba(0, 0, 0, 0.45);
   display: flex;
@@ -22,6 +24,11 @@ const Container = styled.header`
   justify-content: center;
   resize: vertical;
   overflow: auto;
+  transition: all 0.5s;
+
+  @media only screen and (max-width: 480px) {
+    height: 400px;
+  }
 `
 
 export default Container

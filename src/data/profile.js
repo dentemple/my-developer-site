@@ -1,8 +1,9 @@
 const PROFILE = {
-  summary: `Den Temple is a Javascript Developer, who specializes in Web and Mobile Design. He has additional expertise with API integration, SEO consulting, and Machine Learning analytics.`,
-  isAvailable: true,
+  summary: `Den Temple is a Javascript Developer specializing in Web and Mobile Design. He has additional expertise with SEO consulting, API integration, and Machine Learning analytics.`,
+  email: 'developer@dentemple.com',
+  forHire: true,
   location: 'Scranton, PA',
-  year: '2017',
+  year: 'April 2017',
   clientSkills: [
     'Cross-Platform',
     'UI/UX',

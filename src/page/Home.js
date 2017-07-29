@@ -2,14 +2,14 @@
 
 import React, { Component } from 'react'
 import styled from 'styled-components'
-
-import Hero from '../component/Hero'
-import AboutMe from '../component/AboutMe'
 import profile from '../data/profile'
 import type { Profile } from '../types'
 
+import Hero from '../component/Hero'
+import AboutMe from '../component/AboutMe'
+import ContactMe from '../component/ContactMe'
+
 const StyledDiv = styled.div`text-align: center;`
-const StyledText = styled.p`font-size: large;`
 
 type State = {|
   profile: Profile
@@ -26,18 +26,9 @@ class Home extends Component {
     const { profile } = this.state
     return (
       <StyledDiv>
-        <Hero profile={profile} />
+        <Hero forHire={profile.forHire} />
         <AboutMe profile={profile} />
-        <StyledText>
-          <span role="img" aria-label="sparkles emoji">
-            ✨
-          </span>
-          &nbsp;&nbsp;Currently rebuilding this website. Please come back
-          soon!&nbsp;&nbsp;
-          <span role="img" aria-label="sparkles emoji">
-            ✨
-          </span>
-        </StyledText>
+        <ContactMe email={profile.email} />
       </StyledDiv>
     )
   }

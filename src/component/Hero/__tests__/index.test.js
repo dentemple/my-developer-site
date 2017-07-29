@@ -2,15 +2,13 @@
 
 import React from 'react'
 import { shallow, render } from 'enzyme'
-
 import MyComponent from '../index'
-import profile from '../../../data/profile'
 
 it('renders without crashing', () => {
-  shallow(<MyComponent profile={profile} />)
+  shallow(<MyComponent forHire={true} />)
 })
 
 it('matches the snapshot', () => {
-  const component = render(<MyComponent profile={profile} />)
+  const component = render(<MyComponent forHire={true} />)
   expect(component).toMatchSnapshot()
 })

@@ -1,23 +1,22 @@
 // @flow
 
 import React from 'react'
-import type { Profile } from '../../types'
 
 import Container from './Container'
 import GithubRibbon from './GithubRibbon'
-import TextWrapper from './TextWrapper'
+
 import MyName from './MyName'
 import MyTagline from './MyTagline'
 import HorizontalLine from './HorizontalLine'
+import ForHire from './ForHire'
 
-const Hero = ({ profile }: { profile: Profile }) =>
+const Hero = ({ forHire }: { forHire: boolean }) =>
   <Container>
     <GithubRibbon />
-    <TextWrapper>
-      <MyName />
-      <HorizontalLine />
-      <MyTagline />
-    </TextWrapper>
+    <ForHire forHire={forHire} />
+    <MyName />
+    <HorizontalLine />
+    <MyTagline />
   </Container>
 
 export default Hero

@@ -3,49 +3,30 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import SocialMediaButton from './SocialMediaButton'
-import TwitterIcon from '../Icons/Twitter'
-import LinkedInIcon from '../Icons/LinkedIn'
-import MediumIcon from '../Icons/Medium'
+import NBSpace from '../NBSpace'
+import SocialMediaButtons from '../SocialMediaButtons'
 
 const StyledHeading = styled.h2`
   font-size: 1.4em;
   padding: 0;
   margin: 0 5px;
+  transition: all 0.5s;
+
+  @media only screen and (max-width: 480px) {
+    font-size: 1em;
+  }
 `
 
-const NBSpace = () => <span>&nbsp;</span>
-const Text = () =>
+const Title = () =>
   <span>
     Software<NBSpace />Developer
-  </span>
-const Separator = () =>
-  <span>
-    <NBSpace />|{' '}
   </span>
 
 const MyTagline = () =>
   <StyledHeading>
-    <Text />
-    <Separator />
-
-    <SocialMediaButton
-      destination="Twitter"
-      link="https://twitter.com/dentemple">
-      <TwitterIcon />
-    </SocialMediaButton>
-    <NBSpace />
-    <SocialMediaButton
-      destination="Twitter"
-      link="https://www.linkedin.com/in/dentemple/">
-      <LinkedInIcon />
-    </SocialMediaButton>
-    <NBSpace />
-    <SocialMediaButton
-      destination="Twitter"
-      link="https://medium.com/@dentemple">
-      <MediumIcon />
-    </SocialMediaButton>
+    <Title />
+    <NBSpace />|
+    <SocialMediaButtons color="#FFFFFF" />
   </StyledHeading>
 
 export default MyTagline
