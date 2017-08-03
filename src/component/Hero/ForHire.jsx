@@ -13,18 +13,18 @@ const StyledText = styled.a`
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 5%;
+  top: 10%;
   left: 5%;
   overflow: hidden;
-  -ms-transform: rotate(-7deg);
-  -webkit-transform: rotate(-7deg);
-  transform: rotate(-7deg);
+  -ms-transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
   transition: all 0.5s;
 
   &:hover {
-    -webkit-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transform: scale(1.3);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
     color: #bada55;
   }
 

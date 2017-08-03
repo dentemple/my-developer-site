@@ -68,7 +68,6 @@ class ContactMe extends Component {
     this.setState({ [name]: value })
   }
   render() {
-    const { email } = this.props
     return (
       <Section>
         <StyledDiv>

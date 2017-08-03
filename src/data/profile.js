@@ -5,14 +5,14 @@ const PROFILE = {
   location: 'Scranton, PA',
   year: 'April 2017',
   clientSkills: [
-    'Cross-Platform',
+    'Web Apps',
     'UI/UX',
     'SEO',
     'Social Media APIs',
     'Payment APIs',
     'Based in U.S.'
   ],
-  employerSkills: ['React', 'Node.js', 'REST API', 'Agile/Scrum', 'Git/Github']
+  employerSkills: ['React', 'Node.js', 'Agile/Scrum', 'Git/Github']
 }
 
 export default PROFILE
