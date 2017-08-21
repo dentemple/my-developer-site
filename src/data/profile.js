@@ -1,5 +1,5 @@
 const PROFILE = {
-  summary: `Den Temple is a Javascript Developer specializing in Web and Mobile Design. He has additional expertise with SEO consulting, API integration, and Machine Learning analytics.`,
+  summary: `Den Temple is a Javascript Developer specializing in Web and Mobile Design. He has additional expertise with VR experiences, API integration, and SEO consulting.`,
   email: 'developer@dentemple.com',
   forHire: true,
   location: 'Scranton, PA',
@@ -12,7 +12,13 @@ const PROFILE = {
     'Payment APIs',
     'Based in U.S.'
   ],
-  employerSkills: ['React', 'Node.js', 'Agile/Scrum', 'Git/Github']
+  employerSkills: [
+    'React/React VR',
+    'Javascript ES6+',
+    'Node.js',
+    'Agile/Scrum',
+    'Git/Github'
+  ]
 }
 
 export default PROFILE
